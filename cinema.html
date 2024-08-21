@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Totem de Cinema</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-container">
+            <div class="movie-option">
+                <label for="movies">Escolha o filme:</label>
+                <select id="movies">
+                    <option value="Filme 1">Filme 1</option>
+                    <option value="Filme 2">Filme 2</option>
+                    <option value="Filme 3">Filme 3</option>
+                    <option value="Filme 4">Filme 4</option>
+                    <option value="Filme 5">Filme 5</option>
+                    <option value="Filme 6">Filme 6</option>
+                </select>
+            </div>
+            <div class="theater-option">
+                <label for="theaters">Escolha o adicional:</label>
+                <select id="theaters">
+                    <option value="Pipoca Peq">Pipoca Peq</option>
+                    <option value="Pipoca Med">Pipoca Med</option>
+                    <option value="Pipoca Grande">Pipoca Grande</option>
+                    <option value="Combo nº 1">Combo nº 1</option>
+                    <option value="Combo nº 2">Combo nº 2</option>
+                    <option value="Sem adicionais">Sem adicionais</option>
+                </select>
+            </div>
+            <div class="time-option">
+                <label for="times">Escolha o horário:</label>
+                <select id="times">
+                    <option value="14:00">14:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="18:00">18:00</option>
+                </select>
+            </div>
+        </div>
+        <div class="right-container">
+            <h3>Itens Selecionados:</h3>
+            <div class="selected-items" id="selectedItems">
+                <!-- Itens selecionados serão exibidos aqui -->
+            </div>
+        </div>
+    </div>
+
+    <div class="info-container">
+        <textarea id="infoText" maxlength="600" 
+        placeholder="                                INFORMAÇÕES - LEIA COM ATENÇÃO - CINEMA É MAIOR DIVERSÃO!
+
+                     Filme 1 - Tarzan 2D - 14 Anos - Sala 1
+                     Filme 2 - Tarzan 3D - 14 Anos - Sala 2
+                     Filme 3 - Mar Revolto - 2D - 16 Anos - Sala 3
+                     Filme 4 - Mar Revolto - 2D - 16 Anos - Sala 4
+                     Filme 5 - A Mentira II - 2D - Livre -  Sala 5
+                     Filme 6 - Dogs & Cats - 2D - Livre -Sala 6
+
+                                                       BOA DIVERSÃO
+
+        "></textarea>
+    </div>
+
+    <button id="goToPayment">Ir para Pagamento</button>  
+    
+    <script src="script.js"></script>
+</body>
+</html>
